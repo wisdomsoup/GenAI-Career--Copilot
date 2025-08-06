@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Software Engineer",
+    "company": "TechCorp Inc.",
+    "location": "San Francisco, CA",
+    "description": "We are seeking a Senior Software Engineer to join our dynamic team. The ideal candidate will have 5+ years of experience in full-stack development with expertise in React, Node.js, and cloud technologies. Responsibilities include designing scalable systems, mentoring junior developers, and collaborating with cross-functional teams to deliver high-quality software solutions.",
+    "requirements": [
+      "Bachelor's degree in Computer Science or related field",
+      "5+ years of software development experience",
+      "Proficiency in JavaScript, React, Node.js",
+      "Experience with AWS or other cloud platforms",
+      "Strong problem-solving and communication skills"
+    ],
+    "skills": ["JavaScript", "React", "Node.js", "AWS", "MongoDB", "Docker", "Git"]
+  },
+  {
+    "id": 2,
+    "title": "Data Scientist",
+    "company": "DataTech Solutions",
+    "location": "New York, NY",
+    "description": "Join our data science team to build machine learning models and extract insights from large datasets. You'll work on predictive analytics, recommendation systems, and data visualization projects. The role requires strong statistical knowledge and programming skills in Python and R.",
+    "requirements": [
+      "Master's degree in Data Science, Statistics, or related field",
+      "3+ years of experience in data science or analytics",
+      "Proficiency in Python, R, SQL",
+      "Experience with machine learning frameworks",
+      "Strong statistical analysis skills"
+    ],
+    "skills": ["Python", "R", "SQL", "Machine Learning", "TensorFlow", "Pandas", "Scikit-learn", "Statistics"]
+  },
+  {
+    "id": 3,
+    "title": "DevOps Engineer",
+    "company": "CloudFirst Technologies",
+    "location": "Austin, TX",
+    "description": "We're looking for a DevOps Engineer to help automate our infrastructure and deployment processes. You'll work with containerization, CI/CD pipelines, and cloud infrastructure management. Experience with Kubernetes, Docker, and infrastructure as code is essential.",
+    "requirements": [
+      "Bachelor's degree in Engineering or related field",
+      "4+ years of DevOps or infrastructure experience",
+      "Experience with Kubernetes, Docker, Jenkins",
+      "Knowledge of AWS/Azure/GCP",
+      "Scripting skills in Python or Bash"
+    ],
+    "skills": ["Kubernetes", "Docker", "Jenkins", "AWS", "Terraform", "Python", "Bash", "CI/CD"]
+  },
+  {
+    "id": 4,
+    "title": "Frontend Developer",
+    "company": "UX Innovations",
+    "location": "Seattle, WA",
+    "description": "Join our frontend team to create beautiful and responsive user interfaces. You'll work with modern JavaScript frameworks, collaborate with designers, and ensure optimal user experience across all devices. Strong attention to detail and design sense required.",
+    "requirements": [
+      "Bachelor's degree or equivalent experience",
+      "3+ years of frontend development experience",
+      "Expertise in HTML, CSS, JavaScript",
+      "Experience with React or Vue.js",
+      "Understanding of responsive design principles"
+    ],
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Vue.js", "SASS", "Webpack", "Responsive Design"]
+  },
+  {
+    "id": 5,
+    "title": "Product Manager",
+    "company": "InnovateTech",
+    "location": "Boston, MA",
+    "description": "Lead product strategy and development for our SaaS platform. You'll work closely with engineering, design, and sales teams to define product roadmaps, gather requirements, and ensure successful product launches. Strong analytical and communication skills are essential.",
+    "requirements": [
+      "MBA or equivalent experience",
+      "5+ years of product management experience",
+      "Experience with SaaS products",
+      "Strong analytical and communication skills",
+      "Understanding of agile development processes"
+    ],
+    "skills": ["Product Strategy", "Agile", "Analytics", "User Research", "Roadmapping", "Stakeholder Management"]
+  }
+]

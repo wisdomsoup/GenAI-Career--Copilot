@@ -1,0 +1,35 @@
+{
+  "name": "genai-career-copilot",
+  "version": "1.0.0",
+  "description": "AI-powered career assistant for resume optimization, job matching, and interview preparation",
+  "scripts": {
+    "setup": "npm run setup:backend && npm run setup:frontend",
+    "setup:backend": "cd backend && pip install -r requirements.txt",
+    "setup:frontend": "cd frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && uvicorn main:app --reload",
+    "dev:frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "python test_api.py",
+    "create-sample": "cd data && python create_sample_resume.py"
+  },
+  "keywords": [
+    "ai",
+    "career",
+    "resume",
+    "job-matching",
+    "interview",
+    "openai",
+    "react",
+    "fastapi"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "python": ">=3.8.0"
+  }
+}

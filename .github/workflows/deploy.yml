@@ -1,0 +1,71 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-backend:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        cd backend
+        pip install -r requirements.txt
+    
+    - name: Test API endpoints
+      run: |
+        cd backend
+        python -c "
+        from main import app
+        from fastapi.testclient import TestClient
+        client = TestClient(app)
+        response = client.get('/')
+        assert response.status_code == 200
+        print('✅ Backend tests passed')
+        "
+
+  test-frontend:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install dependencies
+      run: |
+        cd frontend
+        npm install
+    
+    - name: Build frontend
+      run: |
+        cd frontend
+        npm run build
+    
+    - name: Test build
+      run: |
+        cd frontend
+        test -d build && echo "✅ Frontend build successful" || exit 1
+
+  deploy-notification:
+    needs: [test-backend, test-frontend]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Deployment Ready
+      run: |
+        echo "🚀 All tests passed! Ready for deployment."
+        echo "Backend will auto-deploy to Render"
+        echo "Frontend will auto-deploy to Vercel"
